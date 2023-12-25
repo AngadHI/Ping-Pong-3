@@ -1,0 +1,54 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PING PONG GAME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+
+    <center>
+    <body background="background.webp">
+        <h1>PING PONG GAME 
+            <button id="instruction" onclick="instruction()" class="btn btn-info">INSTRUCTION</button>
+            <div id="instruction" class="modal fade">
+                <div class="modal-dialogue">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <ol>
+                            <li>1. Click the start button</li>
+                            <li>2. Move the slider up and down</li>
+                            <li>3. Try and block the ball from hitting the side until you fail</li>
+                            <li>4. Click the restart button </li>
+                        </ol>
+                    </div>
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>INSTRUCTIONS</h4>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </h1>
+        <button id="start_button" onclick="start()" class="btn btn-success">START</button>
+        <br>
+<br>
+<button id="restart_button" onclick="restart()" class="btn btn-warning">RESTART</button>
+        <div id="status" class="status"></div>
+        <div class="canvas" id="canvas"></div>
+        <script src="main.js"></script>
+
+        <div class="footer">
+            <h3>By Angad Sabharwal</h3>
+          </div>
+    </body>
+</center>
+</html>
